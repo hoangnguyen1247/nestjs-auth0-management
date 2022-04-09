@@ -61,8 +61,8 @@ custom decorator
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { InjectAuthenticationClient } from '';
-import { InjectManagementClient } from 'auth0';
+import { InjectManagementClient } from 'nestjs-auth-management';
+import { ManagementClient } from 'auth0';
 
 @Injectable()
 export class AppService {

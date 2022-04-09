@@ -3,3 +3,7 @@ node_modules
 lib
 
 .npmrc
+.env
+
+package-lock.json
+.eslintcache
