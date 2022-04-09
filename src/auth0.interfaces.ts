@@ -1,12 +1,7 @@
 import { ModuleMetadata, Type } from "@nestjs/common";
+import { ManagementClientOptions } from "auth0";
 
-export interface Auth0ManagementOptions {
-    domain: string;
-
-    clientId: string;
-
-    clientSecret?: string;
-}
+export type Auth0ManagementOptions = ManagementClientOptions;
 
 export interface Auth0ManagementOptionsFactory {
     createAuth0AuthenticationOptions(): Auth0ManagementOptions | Promise<Auth0ManagementOptions>;
