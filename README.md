@@ -4,7 +4,10 @@
   </h3>
 
   <p align="center">
-    Injectable Auth0 Authentication client for your nestjs projects
+    Injectable Auth0 Management client for your nestjs projects
+  </p>
+  <p align="center">
+    Using Auth0 Authentication, please see <a href="https://github.com/hoangnguyen1247/nestjs-auth0">nestjs-auth0</a>
   </p>
 
 </p>
