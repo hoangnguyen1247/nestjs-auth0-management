@@ -50,6 +50,11 @@
         "nestjs",
         "auth0 management client"
     ],
+    "lint-staged": {
+        "*.@(ts|tsx)": [
+            "eslint \"{src,apps,libs,test}/**/*.ts\" --cache"
+        ]
+    },
     "jest": {
         "moduleFileExtensions": [
             "js",
