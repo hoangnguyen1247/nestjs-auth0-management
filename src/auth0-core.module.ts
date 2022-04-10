@@ -14,7 +14,7 @@ export class Auth0ManagementCoreModule {
         };
 
         return {
-            exports: [],
+            exports: [auth0AuthenticationClient],
             module: Auth0ManagementCoreModule,
             providers: [auth0AuthenticationClient],
         };
@@ -64,7 +64,7 @@ export class Auth0ManagementCoreModule {
             inject: [options.useExisting || options.useClass],
             provide: AUTH0_MANAGEMENT_OPTIONS,
             useFactory: (optionsFactory: Auth0ManagementOptionsFactory) =>
-                optionsFactory.createAuth0AuthenticationOptions(),
+                optionsFactory.createAuth0ManagementOptions(),
         };
     }
 }
